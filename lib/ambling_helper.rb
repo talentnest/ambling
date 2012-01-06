@@ -43,6 +43,7 @@ module Ambling #:nodoc
       
       script << add_variable(options, :settings_file, true)
       script << add_variable(options, :chart_settings)
+      script << add_variable(options, :chart_id) # this is needed for controlling charts with JS
       script << add_variable(options, :additional_chart_settings)
       
       script << add_variable(options, :data_file, true)

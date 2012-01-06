@@ -1,15 +1,7 @@
 # Base module for settings
 require 'active_support'
+require 'active_support/builder' unless defined?(Builder)
 
-# the version of builder that comes with activesupport-1.4.4 is busted for builder.tag!(:y)
-# patch with tag! from builder 2.1.2
-module Builder
-  class XmlBase
-    def tag!(sym, *args, &block)
-      method_missing(sym.to_sym, *args, &block)
-    end
-  end
-end
 module Ambling #:nodoc
   # debugging
   # class BaseLogger
