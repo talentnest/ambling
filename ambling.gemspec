@@ -7,9 +7,9 @@ Gem::Specification.new do |s|
   s.version     = Ambling::VERSION
   s.authors     = ["Daniel Vandersluis"]
   s.email       = ["daniel@codexed.com"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.homepage    = "https://github.com/dvandersluis/ambling"
+  s.summary     = %q{Makes generating XML for amcharts through Rails easy.}
+  s.description = %q{Ambling is a rails plugin makes it easy to generate XML needed by the wonderfully slick Amcharts (http://www.amcharts.com/).}
 
   s.rubyforge_project = "ambling"
 
